@@ -130,7 +130,7 @@ def customer_city_state():
     state_terbanyak = df_selected_state.groupby('customer_city')['customer_id'].nunique().sort_values(ascending=False).head(10)
     fig, ax = plt.subplots()
     state_terbanyak.plot(kind = 'bar', color = selected_color_theme)
-    plt.title('10 city dengan jumlah customer terbanyak pada state {}'.format(selected_state))
+    plt.title('city dengan jumlah customer terbanyak pada state {}'.format(selected_state))
     plt.xlabel('city')
     plt.ylabel('jumlah customer')
     st.pyplot(fig)
@@ -166,7 +166,7 @@ with col[1]:
         st.markdown('### 10 state dengan jumlah customer terbanyak')
         customer_state_none()
     else:
-        st.markdown('### 10 kota dengan jumlah customer terbanyak pada state {}'.format(selected_state))
+        st.markdown('### kota dengan jumlah customer terbanyak pada state {}'.format(selected_state))
         customer_city_state()
 
 
