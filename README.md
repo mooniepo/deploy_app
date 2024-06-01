@@ -1,4 +1,4 @@
-### Guide
+## Guide
 Hello! this is a dashboard project powered by Streamlit that shows visualization of E-commerce Consumers in Brazil dataset from Kaggle
 
 you may access the dashboard from this link
